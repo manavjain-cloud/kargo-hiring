@@ -1,5 +1,7 @@
 # Kargo · Hiring Intelligence
 
+**Live app:** https://kargo-hiring-three.vercel.app · deploys automatically from `main` via Vercel.
+
 An AI hiring workspace for Kargo's **Product Manager** and **Senior Product Manager** roles.
 It scores CVs against the pattern hidden in Arjun's own hiring history (**operator-turned-builder**), explains every score with CV evidence, suggests interview probes, and then hands the decision to Arjun.
 
