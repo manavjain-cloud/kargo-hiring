@@ -1,0 +1,297 @@
+================================================================================
+KARGO HIRING RUBRIC — PRODUCT MANAGER & SENIOR PRODUCT MANAGER
+Derived from Arjun's 8 past hires (who thrived vs. who didn't) + the 2 JDs
+================================================================================
+
+PURPOSE
+-------
+This rubric is the "Context" layer of the Kargo Hiring AI. It turns the
+pattern buried in Arjun's own hiring history into explicit, written criteria,
+so that every CV is scored the same way, with the reason written down.
+
+The system uses this rubric to RECOMMEND and EXPLAIN. Arjun DECIDES.
+No score in this file is a hiring decision.
+
+
+--------------------------------------------------------------------------------
+PART 1 — THE EVIDENCE: WHAT ARJUN'S 8 PAST HIRES TELL US
+--------------------------------------------------------------------------------
+
+Outcome groups (from the case: latest performance rating)
+
+  THRIVING (Exceeds Expectations)          NOT THRIVING
+  -------------------------------          ---------------------------------
+  Rohan Desai       Head of Engineering    Vikram Nair   Product Manager (Meets)
+  Sunita Krishnamurthy  Operations Lead    Rahul Bose    Growth & Mktg (Meets)
+  Aditya Shetty     Sales Lead             Preetham Rao  Backend Eng  (Below)
+  Meghna Tiwari     Customer Success Mgr
+  Lavanya Iyer      Product Manager
+
+What the 5 thriving hires have in common (and the other 3 do not):
+
+  Signal                                   Rohan Sunita Aditya Meghna Lavanya | Vikram Rahul Preetham
+  ---------------------------------------  ----- ------ ------ ------ ------- | ------ ----- --------
+  A. Worked on the logistics "floor"        YES   YES    YES    YES    YES    |  no     no   desk-only
+     before their current function
+  B. Built something nobody asked for,      YES   YES    YES    YES    YES    | partial YES  partial
+     and peers adopted it
+  C. Owned outcomes with no layer above     YES   YES    YES    YES    YES    | partial YES  no
+     making the calls
+  D. Personally owned a live crisis         YES   YES    YES    YES    YES    |  no     no   routine
+                                                                               |               on-call
+  E. Openly learned from a failure          weak  weak   YES    YES    YES    |  no     no   no
+     (killed work, post-mortem)
+
+THE HIDDEN PATTERN (what the JD never asked for):
+  Every thriving hire is an OPERATOR-TURNED-BUILDER. Each one spent real time
+  inside freight / port / 3PL operations — handling Bills of Lading, customs
+  holds, berth windows, carrier exceptions — BEFORE moving into engineering,
+  ops, sales, CS or product. Then, in that seat, they built tools and
+  processes that colleagues adopted on their own.
+
+  Examples straight from the CVs:
+   - Rohan: 3 yrs CHA operations at JNPT -> built an Excel shipment tracker
+     the 12-person ops team adopted in 2 weeks -> later built a BoL
+     verification prototype over a weekend, 30 colleagues using it in a month.
+   - Sunita: 200+ shipments/month of documentation -> redesigned the team's
+     intake workflow over a weekend when the FMS vendor changed formats;
+     kept permanently.
+   - Aditya: port-services sales at JNPT, worked alongside terminal ops at
+     peak -> ran a post-mortem on a lost freight-forwarder deal that became
+     standard team practice.
+   - Meghna: freight-forwarder customer relations -> fixed a 7pm customs hold
+     overnight before the client knew -> built the 30-60-90 onboarding
+     framework her whole CS team now uses.
+   - Lavanya: 3 yrs carrier ops at Mahindra Logistics -> sole PM at a port
+     SaaS; shipped 6 features, killed 2 on usage data, wrote the outage
+     post-mortem herself.
+
+WHAT DID NOT PREDICT SUCCESS (weight = 0 in this rubric):
+   - Pedigree: the non-thriving group holds the "strongest" paper (XLRI MBA,
+     St. Stephen's + NMIMS, NIT Calicut). Thrivers came from VJTI, Loyola,
+     Manipal, HR College, NIT Trichy. College name tells us nothing here.
+   - Certifications & community badges (Product School CPO, Reforge,
+     conference talks, HubSpot/Google certs).
+   - Impressive metrics earned in unrelated domains (HR tech ARR, fintech
+     pipeline, e-commerce scale).
+   - Framework vocabulary (JTBD, OKRs, PRD templates) without ground-level
+     evidence behind it.
+   - Closest match to the JD on paper: Vikram (3 yrs PM, B2B SaaS, strong
+     discovery) was the best JD match for PM and landed "Meets". Lavanya had
+     only 2 yrs PM (bottom of the range) and landed "Exceeds".
+
+CAUTION SIGNALS (seen in the non-thriving group — probe, don't auto-reject):
+   - Whole career inside large, structured orgs (e.g., 12-engineer team in a
+     3,200-person company; 4-person PM team with senior PMs above).
+   - Logistics knowledge only from the desk/API side (e.g., integrated
+     Delhivery/Bluedart APIs but never worked an operations shift).
+   - Achievements described as team outputs with a senior layer making
+     the calls.
+   - A CV that is all wins — no killed feature, lost deal or failure owned.
+
+
+--------------------------------------------------------------------------------
+PART 2 — THE SCORING CRITERIA
+--------------------------------------------------------------------------------
+
+Each criterion is scored 0-3 from CV evidence. Weights reflect how sharply
+each signal separated thrivers from non-thrivers in Arjun's history.
+
+  #   Criterion                                         Weight
+  --  ------------------------------------------------  ------
+  C1  Ground-level operations experience                  25
+  C2  Builds unasked, and others adopt it                 20
+  C3  Ownership without a layer above                     15
+  C4  Personal ownership under operational pressure       10
+  C5  Learns from failure in the open                     10
+      ---------------------------------------  PATTERN     80
+  C6  Role fit (PM or Senior PM — see Part 3)             20
+      ---------------------------------------  TOTAL      100
+
+  Points per criterion = (score / 3) x weight
+
+
+C1. GROUND-LEVEL OPERATIONS EXPERIENCE  (weight 25) — the strongest signal
+    Did they do the operational work themselves, in logistics or a similar
+    operations-heavy business, before or alongside their current function?
+      3 = 2+ yrs hands-on in freight forwarding / CHA / port / 3PL / carrier
+          ops (documentation, customs, carrier allocation, exceptions)
+      2 = Hands-on ops in an adjacent ops-heavy domain (supply chain,
+          warehousing, field ops, manufacturing) OR <2 yrs logistics ops
+      1 = Logistics exposure from the desk only (built integrations, sold
+          to, or analysed logistics without doing the work)
+      0 = No operations exposure
+    Evidence words: shipments/month, BoL, customs hold, CHA, ICD, berth,
+      carrier exceptions, "worked alongside the ops team", site/port visits
+    Seen in: all 5 thrivers = 3. Non-thrivers: 0, 0, 1.
+
+C2. BUILDS UNASKED, AND OTHERS ADOPT IT  (weight 20)
+    Did they spot a broken workflow, build a fix without being told to, and
+    did colleagues/customers adopt it voluntarily?
+      3 = Self-initiated tool/process, adopted by others (named team size or
+          time-to-adoption), still in use
+      2 = Self-initiated build with some adoption, or built within their
+          own function only
+      1 = Built process artifacts as part of an assigned role (templates,
+          docs) with no adoption evidence
+      0 = Only executed what was assigned
+    Evidence words: "built... adopted across", "now standard", "team now
+      uses", "retained permanently", "over a weekend", "from scratch"
+    Mirrors Kargo PM success metric: "features customers use without being
+      asked to."
+
+C3. OWNERSHIP WITHOUT A LAYER ABOVE  (weight 15)
+    Have they made calls with no senior person above them making the call?
+      3 = Sole owner / first in function / "no layer between me and
+          execution"; made and lived with the calls
+      2 = Clear ownership of an area but with a senior layer available
+      1 = Owned components within a larger team; decisions made above
+      0 = Supporting role only
+    Evidence words: "sole PM", "without a product layer", "no account manager
+      layer", "limited oversight", "no escalation to management"
+    Mirrors SPM JD: "no committee that approves product decisions."
+
+C4. PERSONAL OWNERSHIP UNDER OPERATIONAL PRESSURE  (weight 10)
+    When something broke, did they step outside their role and own it?
+      3 = Owned an unplanned crisis end-to-end, outside a defined process
+          (e.g., overnight customs hold, vendor format change over a weekend,
+          outage post-mortem they wrote themselves)
+      2 = Handled high-stakes pressure with clear personal ownership
+      1 = Pressure handled inside a defined routine (on-call rota, SLA queue)
+      0 = No evidence
+
+C5. LEARNS FROM FAILURE IN THE OPEN  (weight 10)
+    Do they show things that did not work, and what changed because of it?
+      3 = Killed their own work on data, or ran a post-mortem that changed
+          team practice
+      2 = Owned a mistake/limitation and drove its fix transparently
+      1 = Diagnosis/fixing of problems, but no own failure acknowledged
+      0 = CV is all wins
+    Mirrors PM JD: "shipped things, killed things, and learned from both."
+
+
+--------------------------------------------------------------------------------
+PART 3 — ROLE FIT (C6, weight 20) + GATE
+--------------------------------------------------------------------------------
+Role fit is deliberately only 20% — Arjun's past hires did not match their
+specs well, and the spec did not predict who thrived. It stays in the rubric
+because some basics are non-negotiable for each role.
+
+PRODUCT MANAGER (core platform: tracking, documentation, status visibility)
+      3 = 2-4 yrs PM (or equivalent end-to-end product ownership), shipped
+          AND killed features, at an early-stage / 0-to-1 company
+      2 = Product ownership evidence, but outside the range or mostly in
+          mature, structured orgs
+      1 = No PM title, but has built and driven adoption of software or
+          tools used by others (e.g., an engineer or ops lead who built
+          internal products)
+      0 = No evidence of owning any product, tool or build end-to-end
+    GATE: C6 must be >= 1.
+
+SENIOR PRODUCT MANAGER (integration & data layer; future Head of Product)
+      Check three things:
+        (a) 5-8 yrs experience incl. owning a product area with no senior
+            PM above
+        (b) Platform / integration / data-layer products (carrier systems,
+            port portals, ERPs, APIs)
+        (c) Early-stage or "rules not written yet" environment
+      3 = all three   2 = two of three   1 = one of three   0 = none
+    GATE: C6 must be >= 2.
+
+  A candidate who fails the gate is NOT shortlisted for that role. If their
+  pattern score (C1-C5) is 60+/80, flag as "Strong Kargo profile — wrong
+  role; consider for other openings" (Kargo is hiring 30 more people).
+
+
+--------------------------------------------------------------------------------
+PART 4 — TIERS
+--------------------------------------------------------------------------------
+  75-100  SHORTLIST        Recommend to Arjun for a conversation this week
+  55-74   CONSIDER         Worth a look if shortlist is thin; probe gaps
+  < 55    PASS             Send a respectful decline once Arjun confirms
+
+  Override rule: C1 = 0 caps the candidate at CONSIDER, however high the
+  rest scores. In Arjun's history, no hire without operations exposure
+  has reached "Exceeds".
+
+
+--------------------------------------------------------------------------------
+PART 5 — BACK-TEST: DOES THE RUBRIC SEPARATE ARJUN'S PAST HIRES?
+--------------------------------------------------------------------------------
+Pattern score only (C1-C5, out of 80), scored from their CVs:
+
+  Hire          C1  C2  C3  C4  C5   Pattern /80   Actual outcome
+  ------------  --  --  --  --  --   -----------   --------------
+  Lavanya Iyer   3   3   3   3   3       80.0       Exceeds
+  Aditya Shetty  3   3   3   2   3       76.7       Exceeds
+  Meghna Tiwari  3   3   3   3   2       76.7       Exceeds
+  Rohan Desai    3   3   3   3   1       73.3       Exceeds
+  Sunita K.      3   3   3   3   1       73.3       Exceeds
+  Preetham Rao   1   2   1   1   0       30.0       Below
+  Rahul Bose     0   2   2   0   0       23.3       Meets
+  Vikram Nair    0   1   1   0   0       11.7       Meets
+
+  Result: a clean split. All 5 thrivers score 73+; all 3 non-thrivers score
+  30 or below. C1 alone separates the two groups perfectly.
+
+  Honest limits:
+   - Only 8 hires (5 thrivers). This is a pattern, not proof. Re-check it
+     after every new hire's first review.
+   - The rubric does not rank within the non-thriving group (Preetham,
+     rated Below, scores above the two Meets hires). Use it to find
+     thrivers, not to fine-rank the bottom.
+   - Scored from CVs only. If the full hire profiles' interview notes
+     ("what stood out", "what the interview revealed") are available,
+     refine the anchors with them.
+
+
+--------------------------------------------------------------------------------
+PART 6 — WHAT TO PROBE IN THE INTERVIEW (by criterion)
+--------------------------------------------------------------------------------
+The system attaches the probes for the criteria where the candidate scored
+lowest or where the evidence was thinnest.
+
+  C1  "Walk me through a freight forwarder's morning. What breaks first?"
+      "When were you last physically in an ops room / at a port / warehouse?"
+  C2  "Tell me about something you built that nobody asked for. Who uses it
+      today, and how did they find it?"
+  C3  "Tell me about a call you made with no one above you to check it.
+      What happened, and would you make it again?"
+  C4  "Describe the worst operational night of your career. What did you do
+      personally between the problem and the fix?"
+  C5  "What's something you shipped and then killed? How did you know?"
+  C6-PM   "What are the 3 things Kargo should build next, and why?"
+  C6-SPM  "Which integration would you ship first to unlock a new customer
+          segment? What would you refuse to build, and why?"
+          "When should Kargo build vs. configure vs. not touch?"
+  All     Confirm: Mumbai-based or willing to relocate; in-office.
+
+
+--------------------------------------------------------------------------------
+PART 7 — OUTPUT FORMAT PER CANDIDATE (what Arjun sees)
+--------------------------------------------------------------------------------
+  Candidate:      <name>  |  Role applied: PM / Senior PM
+  Who they are:   <2 lines: current role, path, domain>
+  Score:          <total>/100   Tier: SHORTLIST / CONSIDER / PASS
+  Breakdown:      C1 _ C2 _ C3 _ C4 _ C5 _ C6 _   Gate: pass / fail
+  Why ranked here: <2-3 lines quoting CV evidence for the top criteria>
+  Closest past hire: <which thriving hire they most resemble, and why>
+  What to probe:  <2-3 questions from Part 6 tied to weakest criteria>
+  Flags:          <caution signals, override applied, wrong-role flag>
+
+  --> ARJUN DECIDES: Move forward / Hold / Decline
+  --> Downstream automation sends the matching email once he decides.
+
+
+--------------------------------------------------------------------------------
+PART 8 — FAIRNESS GUARDRAILS
+--------------------------------------------------------------------------------
+  - Never score on name, gender, age, photo, college name, or family
+    background. Score only on work evidence in the CV.
+  - Career gaps, non-linear paths and non-PM titles are NOT penalised —
+    Rohan (ops -> engineering) and Lavanya (ops -> product) switched
+    functions entirely, and neither had a textbook path.
+  - Missing information = score the evidence present, and add a probe;
+    do not assume the worst.
+  - The rubric recommends. Arjun makes every final call.
+================================================================================

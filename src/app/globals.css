@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------ */
+/* Tokens — light (warm white) is the base; .dark overrides            */
+/* ------------------------------------------------------------------ */
+:root {
+  --bg: #f6f4f0;
+  --surface: #ffffff;
+  --surface-2: #f1eee8;
+  --surface-3: #e9e5de;
+  --border: #e3ded5;
+  --border-strong: #cfc8bc;
+  --fg: #121212;
+  --fg-muted: #5c5750;
+  --fg-subtle: #857f76;
+  --accent: #d3121d;
+  --accent-hover: #b20e18;
+  --accent-fg: #ffffff;
+  --accent-soft: #fbe8e7;
+  --accent-text: #b0101a;
+  --amber: #9a5b00;
+  --amber-soft: #fbf0dc;
+  --ok: #1f6f43;
+  --ok-soft: #e3f1e8;
+  --chart-context: #8f877b;
+  --ring: rgba(211, 18, 29, 0.35);
+  --shadow: 0 1px 2px rgba(18, 18, 18, 0.04), 0 4px 16px rgba(18, 18, 18, 0.04);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #09090a;
+  --surface: #111113;
+  --surface-2: #18181b;
+  --surface-3: #202024;
+  --border: #242428;
+  --border-strong: #34343a;
+  --fg: #f4f2ee;
+  --fg-muted: #a8a49d;
+  --fg-subtle: #77736d;
+  --accent: #ea2a35;
+  --accent-hover: #ff4550;
+  --accent-fg: #ffffff;
+  --accent-soft: rgba(234, 42, 53, 0.13);
+  --accent-text: #ff6069;
+  --amber: #f0b453;
+  --amber-soft: rgba(240, 180, 83, 0.12);
+  --ok: #5fd08f;
+  --ok-soft: rgba(95, 208, 143, 0.12);
+  --chart-context: #8d8983;
+  --ring: rgba(234, 42, 53, 0.45);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.25);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-fg: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-subtle: var(--fg-subtle);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
+  --color-amber: var(--amber);
+  --color-amber-soft: var(--amber-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-chart-context: var(--chart-context);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --shadow-card: var(--shadow);
+  --animate-rise: rise 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-fade: fade 300ms ease-out both;
+  --animate-shimmer: shimmer 1.4s ease-in-out infinite;
+  --animate-grow: grow 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes grow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* In the components layer so Tailwind utilities (e.g. rounded-full) can override them. */
+@layer components {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, var(--surface-2) 25%, var(--surface-3) 50%, var(--surface-2) 75%);
+    background-size: 200% 100%;
+    animation: var(--animate-shimmer);
+    border-radius: 6px;
+  }
+}
+
+dialog::backdrop {
+  background: rgba(8, 8, 9, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
